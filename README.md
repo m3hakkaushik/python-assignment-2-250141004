@@ -2,6 +2,14 @@
 
 GradeBook Analyzer is a Python console application for managing and analyzing student marks and grades.
 
+# Output
+
+ENTERING MARKS AND CSV FILE HANDLING
+
+<img width="703" height="400" alt="Screenshot 2025-11-05 at 1 03 26 PM" src="https://github.com/user-attachments/assets/40e97882-bf0d-43e0-8e2f-ba5c403f80fb" />
+
+<img width="667" height="399" alt="Screenshot 2025-11-05 at 1 05 17 PM" src="https://github.com/user-attachments/assets/14b79f01-a95e-46e2-b044-f77711344f7c" />
+
 ## Features
 
 - Enter student names and marks manually.
