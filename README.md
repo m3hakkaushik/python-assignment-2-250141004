@@ -1,4 +1,4 @@
-# GradeBook Thingy
+# GradeBook ANALYSER
 
 Hey! This is a little Python thingy that helps you keep track of student marks and grades. You can type stuff in or load it from a file. It’s pretty chill.
 
