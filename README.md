@@ -1,33 +1,39 @@
-# GradeBook ANALYSER
+# GradeBook Analyzer
 
-Hey! This is a little Python thingy that helps you keep track of student marks and grades. You can type stuff in or load it from a file. It’s pretty chill.
+GradeBook Analyzer is a Python console application for managing and analyzing student marks and grades.
 
-## What’s This Do?
+## Features
 
-- You can write student names and their marks yourself.
-- Or load all the marks from a CSV file (like a list in a file).
-- It tells you the average mark, middle mark, top mark, and lowest mark.
-- It gives each student a grade letter (A, B, C, D, or F).
-- It counts how many people got each grade.
-- It tells you who passed and who flunked.
-- It prints a report card with all the info.
+- Enter student names and marks manually.
+- Load student marks from a CSV file.
+- Calculate average, median, maximum, and minimum marks.
+- Assign letter grades (A, B, C, D, F) based on marks.
+- Count the number of students in each grade category.
+- Determine pass/fail status for students.
+- Display a formatted report card with names, marks, and grades.
 
-## How To Use It
+## Usage
 
-1. Run the `gradebook.py` thing.
-2. You’ll see a menu with these numbers:
-   - Press `1` if you wanna type names and marks.
-   - Press `2` if you wanna load marks from a file.
-   - Press `3` if you wanna quit (bye!).
-3. If you pick 1, just type in the name and marks for each student. When done, type `done`.
-4. If you pick 2, it’ll ask for the file name. Give it, like, `student_marks.csv`.
-5. After loading or typing, it shows you all the scores and grades.
-6. Hit ENTER to go back to the menu if you want.
+1. Run the `gradebook.py` script.
+2. Choose an option from the menu:
+   - `1`: Enter student names and marks manually.
+   - `2`: Load marks from a CSV file (e.g., `student_marks.csv`).
+   - `3`: Exit the program.
+3. If entering marks manually, type the student name and mark. Type `done` to finish.
+4. After loading or entering marks, the program will analyze the data and display:
+   - Average, median, max, and min marks.
+   - Grade distribution counts.
+   - List of students who passed and failed.
+   - Report card listing each student's name, marks, and grade.
+5. Press ENTER to return to the menu.
 
-## What’s The File Look Like?
+## CSV File Format
 
-If you use a CSV file, it’s like a list with two things: name and mark. No fancy headers, just plain stuff:
+The CSV file should have two columns without a header row:
+- Student name
+- Student mark (integer between 0 and 100)
 
+Example:
 Kirti,78
 Palak,92
 Ridhima,54
@@ -36,38 +42,40 @@ Agrima,39
 Ronak,66
 Tani,99
 
-## What You’ll See
+## Requirements
 
-Once loaded, it shows:
+- Python 3.x
+- Uses Python's built-in `csv` module.
 
-- The class average mark.
-- The middle score.
-- Highest and lowest marks.
-- How many folks got A, B, C, D, or F.
-- Who passed and who didn’t.
-- A neat little report card.
+## Example Output
 
-## What You Need
+Welcome to GradeBook Analyzer
 
-- Python 3 (duh).
-- No fancy libraries, just what’s built-in.
+Enter Student names and marks
 
-## Example Run
+Load marks from csv
 
+Exit
+Choose 1, 2, or 3: 2
+Enter CSV file name: student_marks.csv
+Loaded 7 students.
+
+Status:
 Average: 72.71
 Median: 78
-Top Score: 99
-Lowest Score: 39
+Max Marks: 99
+Min Marks: 39
 
-Grades Breakdown:
-A - 2 folks
-B - 1 person
-C - 1 person
-D - 1 person
-F - 2 people
+Grade Counts:
+A: 2
+B: 1
+C: 1
+D: 1
+F: 2
 
-Passed (6): Kirti, Palak, Ridhima, Aishu, Ronak, Tani
-Failed (1): Agrima
+Pass/Fail:
+Passed (6) - Kirti, Palak, Ridhima, Aishu, Ronak, Tani
+Failed (1) - Agrima
 
 --- Report Card ---
 Name Marks Grade
@@ -78,4 +86,3 @@ Aishu 81 B
 Agrima 39 F
 Ronak 66 D
 Tani 99 A
-
